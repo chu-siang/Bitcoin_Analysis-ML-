@@ -68,4 +68,3 @@ bitcoin-analysis/
         ├── price_chart.png
         ├── model_comparison.png
         └── cluster_visualization.png
-```
