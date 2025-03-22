@@ -4,7 +4,9 @@ This project analyzes Bitcoin data.
 
 -------
 ### Folder Structure
+
 ```plaintext
+
 bitcoin-analysis/
 ├── README.md
 ├── requirements.txt
