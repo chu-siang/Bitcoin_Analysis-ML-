@@ -29,18 +29,18 @@ def prepare_data_for_clustering(df):
     cluster_features = ['returns', 'volatility_24h', 'rsi_14', 'volume_ratio', 'macd', 'bb_width']
     X = df[cluster_features]
     
-    # 檢查 NaN 值
+    # check NaN value
     print(f"NaN values before cleaning: {X.isna().sum().sum()}")
     
-    # 檢查是否有全為 NaN 的列，並刪除
+    # check is there any the row of all NaN values, and deleted.
     all_nan_cols = X.columns[X.isna().all()].tolist()
     if all_nan_cols:
         print(f"Dropping columns with all NaN values: {all_nan_cols}")
         X = X.drop(columns=all_nan_cols)
-        # 更新 cluster_features 列表
+        # update cluster_features table
         cluster_features = [col for col in cluster_features if col not in all_nan_cols]
     
-    # 填補剩餘的 NaN 值
+    # fill the remain NaN values.
     X = X.fillna(X.median())
     print(f"NaN values after cleaning: {X.isna().sum().sum()}")
     
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     # Prepare data for clustering
     X, scaler, cluster_features = prepare_data_for_clustering(bitcoin_ml_data)
     
-    # 檢查維度
+    # check the dimension
     print(f"Clustering data shape: {X.shape}")
     print(f"Features used: {cluster_features}")
     
