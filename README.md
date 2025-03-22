@@ -4,7 +4,7 @@ This project analyzes Bitcoin data.
 
 -------
 ### Folder Structure
-
+```
 bitcoin-analysis/
 ├── README.md
 ├── requirements.txt
@@ -68,3 +68,4 @@ bitcoin-analysis/
         ├── price_chart.png
         ├── model_comparison.png
         └── cluster_visualization.png
+```
