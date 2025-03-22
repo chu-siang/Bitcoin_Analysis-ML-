@@ -1,4 +1,5 @@
 # Bitcoin Price Analysis and Prediction Using Machine Learning
+[Better to using markdown to read this](https://github.com/chu-siang/Bitcoin_Analysis_ML/blob/main/report.md)
 
 ## Web link to dataset
 [GitHub Repository](https://github.com/chu-siang/Bitcoin_Analysis_ML/tree/main)
