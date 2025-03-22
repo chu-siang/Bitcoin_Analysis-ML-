@@ -33,7 +33,6 @@ experiments: models
 visualize: models experiments
 	python3 -m src.visualization.plot_predictions
 	python3 -m src.visualization.plot_clusters
-	python3 -m src.visualization.plot_experiments
 
 # Run tests
 test:
@@ -41,7 +40,6 @@ test:
 
 # Generate report
 report: visualize
-	python3 report/script.py
 	# Try PDF first, fall back to HTML if it fails
 	jupyter nbconvert --to pdf report/bitcoin_analysis_report.ipynb || jupyter nbconvert --to html report/bitcoin_analysis_report.ipynb
 
